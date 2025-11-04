@@ -1,31 +1,31 @@
 -- Use database
-
 USE personal_library;
 
--- Create Authors table.
+-- Drop dependent tables in correct order
+DROP TABLE IF EXISTS ReadingStatus;
+DROP TABLE IF EXISTS Books;
 DROP TABLE IF EXISTS Authors;
-CREATE TABLE Authors(
+
+-- Create Authors table
+CREATE TABLE Authors (
     AuthorId INT PRIMARY KEY AUTO_INCREMENT,
-    AuthorFirstName VARCHAR(10),
-    AuthorLastName VARCHAR(10),
+    AuthorFirstName VARCHAR(50),
+    AuthorLastName VARCHAR(50),
     Country VARCHAR(50)
 );
 
--- Create Books table.
-DROP TABLE IF EXISTS Books;
-
-CREATE TABLE Books(
+-- Create Books table
+CREATE TABLE Books (
     BookNumber INT PRIMARY KEY AUTO_INCREMENT,
-    BookTitle VARCHAR(50) NOT NULL,
+    BookTitle VARCHAR(100) NOT NULL,
     AuthorId INT,
     PublicationYear INT,
-    IssueDate DATE
+    IssueDate DATE,
+    FOREIGN KEY (AuthorId) REFERENCES Authors(AuthorId)
 );
 
--- Create reading status table
-DROP TABLE IF EXISTS ReadingStatus;
-
-CREATE TABLE ReadingStatus(
+-- Create ReadingStatus table
+CREATE TABLE ReadingStatus (
     StatusId INT PRIMARY KEY AUTO_INCREMENT,
     BookNumber INT,
     ReadingStatus VARCHAR(20) NOT NULL,
@@ -35,15 +35,14 @@ CREATE TABLE ReadingStatus(
     FOREIGN KEY (BookNumber) REFERENCES Books(BookNumber)
 );
 
-
--- Insert values to Authours Table.
-INSERT INTO Authors (AuthorId,AuthorFirstName,AuthorLastName,Country)
+-- Insert values into Authors table
+INSERT INTO Authors (AuthorFirstName, AuthorLastName, Country)
 VALUES 
-('Hellen','White', 'USA'),
-('Tyron', 'Harrison','USA'),
-('Chinua','Achebe','Nigeria'),
-('Jane','Austen ','UK'),
-('Charles ','Dickens ','UK'),
-('F. Scott', 'Fitzgerald ','USA'),
-('Mario ','Vargas ','Peru');
+('Hellen', 'White', 'USA'),
+('Tyron', 'Harrison', 'USA'),
+('Chinua', 'Achebe', 'Nigeria'),
+('Jane', 'Austen', 'UK'),
+('Charles', 'Dickens', 'UK'),
+('F. Scott', 'Fitzgerald', 'USA'),
+('Mario', 'Vargas', 'Peru');
 
