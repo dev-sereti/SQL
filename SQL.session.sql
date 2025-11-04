@@ -18,6 +18,7 @@ CREATE TABLE Books(
     BookNumber INT PRIMARY KEY AUTO_INCREMENT,
     BookTitle VARCHAR(50) NOT NULL,
     AuthorId INT,
+    PublicationYear INT,
     IssueDate DATE
 );
 
@@ -44,4 +45,5 @@ VALUES
 ('Jane','Austen ','UK'),
 ('Charles ','Dickens ','UK'),
 ('F. Scott', 'Fitzgerald ','USA'),
+('Mario ','Vargas ','Peru');
 
