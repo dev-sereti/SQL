@@ -30,6 +30,8 @@ CREATE TABLE ReadingStatus(
     ReadingStatus VARCHAR(20) NOT NULL,
     FinishDate DATE,
     BookRating INT,
-    Notes VARCHAR(50),
+    Notes TEXT,
     FOREIGN KEY (BookNumber) REFERENCES Books(BookNumber)
 );
+
+
