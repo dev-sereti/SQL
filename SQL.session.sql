@@ -46,3 +46,5 @@ VALUES
 ('F. Scott', 'Fitzgerald', 'USA'),
 ('Mario', 'Vargas', 'Peru');
 
+-- Insert values into Books table
+
