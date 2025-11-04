@@ -1,24 +1,25 @@
 -- Use database
 
 USE personal_library;
-DROP TABLE IF EXISTS Books;
+
+-- Create Authors table.
+DROP TABLE IF EXISTS Authors;
+CREATE TABLE Authors(
+    AuthorId INT PRIMARY KEY AUTO_INCREMENT,
+    AuthorFirstName VARCHAR(10),
+    AuthorLastName VARCHAR(10),
+    Country VARCHAR(50)
+);
+
 
 -- Create Books table.
+DROP TABLE IF EXISTS Books;
 
 CREATE TABLE Books(
     BookNumber INT PRIMARY KEY AUTO_INCREMENT,
     BookTitle VARCHAR(50) NOT NULL,
     AuthorId INT,
     IssueDate DATE
-);
--- Create Authors table.
-DROP TABLE IF EXISTS Authors;
-
-CREATE TABLE Authors(
-    AuthorId INT PRIMARY KEY AUTO_INCREMENT,
-    AuthorFirstName VARCHAR(10),
-    AuthorLastName VARCHAR(10),
-    Country VARCHAR(50)
 );
 
 -- Create reading status table
@@ -36,6 +37,4 @@ CREATE TABLE ReadingStatus(
 
 
 -- Insert values to Books Table.
-
-
-
+INSERT INTO Books (BookNumber,BookTitle,)
