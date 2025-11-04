@@ -56,6 +56,6 @@ VALUES
 (' Great Expectations',5,1860,'12-05-2022'),
 ('A Tale of Two Cities',5,1859,'17-03-2023'),
 ('The Great Gatsby',6,1925,'24-08-2019'),
-('The Time of the Hero, Death in the Andes',7,1996,'12-09-2024');
+('The Time of the Hero',7,1996,'12-09-2024');
 
-
+-- Insert values into ReadingStatus table
