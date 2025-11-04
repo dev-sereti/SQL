@@ -53,7 +53,7 @@ VALUES
 ('Things Fall Apart',3,1958,'12-06-2015'),
 ('Pride and Prejudice',4,1813,'10-09-2020'),
 ('Sense and Sensibility',4,1811,'03-11-2020'),
-(' Great Expectations',5,1860,'12-05-2022'),
+('Great Expectations',5,1860,'12-05-2022'),
 ('A Tale of Two Cities',5,1859,'17-03-2023'),
 ('The Great Gatsby',6,1925,'24-08-2019'),
 ('The Time of the Hero',7,1996,'12-09-2024');
