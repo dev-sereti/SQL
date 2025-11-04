@@ -50,12 +50,12 @@ VALUES
 
 INSERT INTO Books(BookTitle,AuthorId,PublicationYear,BuyDate)
 VALUES
-('Things Fall Apart',3,'17 June 1958.','12-06-2015'),
-('Pride and Prejudice',4,'28-01-1813','10-09-2020'),
-('Sense and Sensibility',4,'30-10-1811','03-11-2020'),
-(' Great Expectations',5,'1-12-1860','12-05-2022'),
-('A Tale of Two Cities',5,'26-11-1859','17-03-2023'),
-('The Great Gatsby',6,'10-04-1925','24-08-2019'),
-('The Time of the Hero, Death in the Andes',7,'01-01-1996','12-09-2024');
+('Things Fall Apart',3,1958,'12-06-2015'),
+('Pride and Prejudice',4,1813,'10-09-2020'),
+('Sense and Sensibility',4,1811,'03-11-2020'),
+(' Great Expectations',5,1860,'12-05-2022'),
+('A Tale of Two Cities',5,1859,'17-03-2023'),
+('The Great Gatsby',6,1925,'24-08-2019'),
+('The Time of the Hero, Death in the Andes',7,1996,'12-09-2024');
 
 
