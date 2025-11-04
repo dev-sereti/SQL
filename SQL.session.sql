@@ -35,3 +35,7 @@ CREATE TABLE ReadingStatus(
 );
 
 
+-- Insert values to Books Table.
+
+
+
