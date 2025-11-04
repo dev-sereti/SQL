@@ -6,5 +6,4 @@ CREATE TABLE Books(
     AuthorFirstName VARCHAR(10),
     AuthorLastName VARCHAR(10),
     IssueDate DATE
-
 );
