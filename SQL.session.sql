@@ -50,12 +50,12 @@ VALUES
 
 INSERT INTO Books(BookTitle,AuthorId,PublicationYear,BuyDate)
 VALUES
-('Things Fall Apart',3,1958,'12-06-2015'),
-('Pride and Prejudice',4,1813,'10-09-2020'),
-('Sense and Sensibility',4,1811,'03-11-2020'),
-('Great Expectations',5,1860,'12-05-2022'),
-('A Tale of Two Cities',5,1859,'17-03-2023'),
-('The Great Gatsby',6,1925,'24-08-2019'),
-('The Time of the Hero',7,1996,'12-09-2024');
+('Things Fall Apart',3,1958,'2015-12-06'),
+('Pride and Prejudice',4,1813,'2020-10-09'),
+('Sense and Sensibility',4,1811,'2020-03-11'),
+('Great Expectations',5,1860,'2022-12-05'),
+('A Tale of Two Cities',5,1859,'2023-17-03'),
+('The Great Gatsby',6,1925,'2019-24-08'),
+('The Time of the Hero',7,1996,'2024-12-09');
 
 -- Insert values into ReadingStatus table
