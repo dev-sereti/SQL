@@ -11,7 +11,6 @@ CREATE TABLE Authors(
     Country VARCHAR(50)
 );
 
-
 -- Create Books table.
 DROP TABLE IF EXISTS Books;
 
@@ -36,5 +35,10 @@ CREATE TABLE ReadingStatus(
 );
 
 
--- Insert values to Books Table.
-INSERT INTO Books (BookNumber,BookTitle,)
+-- Insert values to Authours Table.
+INSERT INTO Books (AuthorId,AuthorFirstName,AuthorLastName,Country)
+VALUES 
+('Hellen','White', 'USA'),
+
+
+
