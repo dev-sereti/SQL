@@ -20,7 +20,7 @@ CREATE TABLE Books (
     BookTitle VARCHAR(100) NOT NULL,
     AuthorId INT,
     PublicationYear INT,
-    IssueDate DATE,
+    BuyDate DATE,
     FOREIGN KEY (AuthorId) REFERENCES Authors(AuthorId)
 );
 
@@ -47,4 +47,15 @@ VALUES
 ('Mario', 'Vargas', 'Peru');
 
 -- Insert values into Books table
+
+INSERT INTO Books(BookNumber,BookTitle,AuthorId,PublicationYear,BuyDate)
+VALUES
+('Things Fall Apart',3,'17 June 1958.','12-06-2015'),
+('Pride and Prejudice',4,'28-01-1813','10-09-2020'),
+('Sense and Sensibility',4,'30-10-1811','03-11-2020'),
+(' Great Expectations',5,),
+('A Tale of Two Cities',5,),
+('The Great Gatsby',6,),
+('The Time of the Hero, Death in the Andes',7,)
+
 
