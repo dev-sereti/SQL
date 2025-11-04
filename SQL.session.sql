@@ -1,4 +1,9 @@
+-- Use database
+
 USE personal_library;
+DROP TABLE IF EXISTS Books;
+
+-- Create Books table.
 
 CREATE TABLE Books(
     BookNumber INT PRIMARY KEY AUTO_INCREMENT,
@@ -7,7 +12,6 @@ CREATE TABLE Books(
     IssueDate DATE
 );
 -- Create Authors table.
-
 CREATE TABLE Authors(
     AuthorId INT PRIMARY KEY AUTO_INCREMENT,
     AuthorFirstName VARCHAR(10),
