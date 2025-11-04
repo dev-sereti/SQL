@@ -37,7 +37,7 @@ CREATE TABLE ReadingStatus(
 
 
 -- Insert values to Authours Table.
-INSERT INTO Books (AuthorId,AuthorFirstName,AuthorLastName,Country)
+INSERT INTO Authors (AuthorId,AuthorFirstName,AuthorLastName,Country)
 VALUES 
 ('Hellen','White', 'USA'),
 ('Tyron', 'Harrison','USA'),
