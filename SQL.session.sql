@@ -43,5 +43,5 @@ VALUES
 ('Chinua','Achebe','Nigeria'),
 ('Jane','Austen ','UK'),
 ('Charles ','Dickens ','UK'),
-
+('F. Scott', 'Fitzgerald ','USA'),
 
