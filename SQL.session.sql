@@ -48,14 +48,16 @@ VALUES
 
 -- Insert values into Books table
 
-INSERT INTO Books(BookTitle,AuthorId,PublicationYear,BuyDate)
+INSERT INTO Books (BookTitle, AuthorId, PublicationYear, BuyDate)
 VALUES
-('Things Fall Apart',3,1958,'2015-12-06'),
-('Pride and Prejudice',4,1813,'2020-10-09'),
-('Sense and Sensibility',4,1811,'2020-03-11'),
-('Great Expectations',5,1860,'2022-12-05'),
-('A Tale of Two Cities',5,1859,'2023-17-03'),
-('The Great Gatsby',6,1925,'2019-24-08'),
-('The Time of the Hero',7,1996,'2024-12-09');
+('Things Fall Apart', 3, 1958, STR_TO_DATE('12-06-2015', '%d-%m-%Y')),
+('Pride and Prejudice', 4, 1813, STR_TO_DATE('10-09-2020', '%d-%m-%Y')),
+('Sense and Sensibility', 4, 1811, STR_TO_DATE('03-11-2020', '%d-%m-%Y')),
+('Great Expectations', 5, 1860, STR_TO_DATE('12-05-2022', '%d-%m-%Y')),
+('A Tale of Two Cities', 5, 1859, STR_TO_DATE('17-03-2023', '%d-%m-%Y')),
+('The Great Gatsby', 6, 1925, STR_TO_DATE('24-08-2019', '%d-%m-%Y')),
+('The Time of the Hero', 7, 1996, STR_TO_DATE('12-09-2024', '%d-%m-%Y'));
+
 
 -- Insert values into ReadingStatus table
+
