@@ -25,7 +25,7 @@ CREATE TABLE Authors(
 DROP TABLE IF EXISTS ReadingStatus;
 
 CREATE TABLE ReadingStatus(
-    StatusId INT PRIMARY KEY AUTO_INCREMENT;
+    StatusId INT PRIMARY KEY AUTO_INCREMENT,
     BookNumber INT,
     ReadingStatus VARCHAR(20) NOT NULL,
     FinishDate DATE,
