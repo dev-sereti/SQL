@@ -1,0 +1,4 @@
+CREATE TABLE students (
+    id INT  IDENTITY(1,1) PRIMARY KEY
+
+);
