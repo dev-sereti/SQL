@@ -39,6 +39,9 @@ CREATE TABLE ReadingStatus(
 INSERT INTO Books (AuthorId,AuthorFirstName,AuthorLastName,Country)
 VALUES 
 ('Hellen','White', 'USA'),
-
+('Tyron', 'Harrison','USA'),
+('Chinua','Achebe','Nigeria'),
+('Jane','Austen ','UK'),
+('Charles ','Dickens ','UK'),
 
 
