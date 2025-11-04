@@ -28,6 +28,20 @@
             "name": "wKw",
             "database": "data_analysis",
             "username": "Sereti"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "SQL",
+            "database": "personal_library",
+            "username": "Sereti"
         }
     ]
 }
