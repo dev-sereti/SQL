@@ -1,12 +1,6 @@
 -- Use database
 USE personal_library;
 
--- Drop dependent tables in correct order
-
---DROP TABLE IF EXISTS ReadingStatus;
---DROP TABLE IF EXISTS Books;
---DROP TABLE IF EXISTS authors;
-
 -- Create the authors table
 CREATE TABLE authors (
     author_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -44,9 +38,9 @@ CREATE TABLE reading_status (
 -- Insert individual authors
 INSERT INTO authors (first_name, last_name, birth_year, country)
 VALUES 
-('George', 'Orwell', 1903, 'United Kingdom');
-('Jane', 'Austen', 1775, 'United Kingdom');
-('Gabriel', 'García Márquez', 1927, 'Colombia');
+('George', 'Orwell', 1903, 'United Kingdom'),
+('Jane', 'Austen', 1775, 'United Kingdom'),
+('Gabriel', 'García Márquez', 1927, 'Colombia'),
 ('Haruki', 'Murakami', 1949, 'Japan'),
 ('Chimamanda', 'Ngozi Adichie', 1977, 'Nigeria'),
 ('Leo', 'Tolstoy', 1828, 'Russia');
