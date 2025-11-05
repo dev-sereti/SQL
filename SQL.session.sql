@@ -43,13 +43,13 @@ CREATE TABLE reading_status (
 
 -- Insert individual authors
 INSERT INTO authors (first_name, last_name, birth_year, country)
-VALUES ('George', 'Orwell', 1903, 'United Kingdom');
-
-INSERT INTO authors (first_name, last_name, birth_year, country)
-VALUES ('Jane', 'Austen', 1775, 'United Kingdom');
-
-INSERT INTO authors (first_name, last_name, birth_year, country)
-VALUES ('Gabriel', 'García Márquez', 1927, 'Colombia');
+VALUES 
+('George', 'Orwell', 1903, 'United Kingdom');
+('Jane', 'Austen', 1775, 'United Kingdom');
+('Gabriel', 'García Márquez', 1927, 'Colombia');
+('Haruki', 'Murakami', 1949, 'Japan'),
+('Chimamanda', 'Ngozi Adichie', 1977, 'Nigeria'),
+('Leo', 'Tolstoy', 1828, 'Russia');
 
 -- Insert values into Books table
 
