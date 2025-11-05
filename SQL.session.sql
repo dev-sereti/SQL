@@ -98,3 +98,21 @@ SELECT title,publication_year
 FROM books
 ORDER BY publication_year DESC;
 
+-- Get books with their author names
+
+SELECT books.title, authors.first_name,authors.last_name,books.publication_year
+FROM books 
+JOIN authors ON books.author_id = authors.author_id;
+
+-- Get completed books with author info and ratings
+
+SELECT 
+books.title,
+authors.first_name,
+authors.last_name,
+reading_status.rating,
+FROM books
+JOIN authors ON books.author_id = authors.author_id
+JOIN reading_status ON books.book_id = reading_status.book_id
+WHERE reading_status ='Completed'
+ORDER BY reading_status DESC;
