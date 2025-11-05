@@ -116,3 +116,9 @@ JOIN authors ON books.author_id = authors.author_id
 JOIN reading_status ON books.book_id = reading_status.book_id
 WHERE reading_status ='Completed'
 ORDER BY reading_status DESC;
+
+--  Aggregate Functions.
+
+-- Count 
+
+SELECT COUNT (*) AS total_books FROM books;
