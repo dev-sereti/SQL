@@ -16,14 +16,16 @@ CREATE TABLE authors (
     country VARCHAR(50)
 );
 
--- Create Books table
-CREATE TABLE Books (
-    BookNumber INT PRIMARY KEY AUTO_INCREMENT,
-    BookTitle VARCHAR(100) NOT NULL,
-    AuthorId INT,
-    PublicationYear INT,
-    BuyDate DATE,
-    FOREIGN KEY (AuthorId) REFERENCES Authors(AuthorId)
+-- Create the books table
+CREATE TABLE books (
+    book_id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(200) NOT NULL,
+    author_id INT,
+    publication_year INT,
+    genre VARCHAR(50),
+    pages INT,
+    isbn VARCHAR(13),
+    FOREIGN KEY (author_id) REFERENCES authors(author_id)
 );
 
 -- Create ReadingStatus table
