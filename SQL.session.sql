@@ -64,8 +64,8 @@ VALUES
 
 INSERT INTO ReadingStatus(BookNumber,ReadingStatus,FinishDate,BookRating,Notes)
 VALUES
-(1,'Completed',STR_TO_DATE('2024-01-05','%d-%m-%Y'),9,''),
-(4,'Completed',STR_TO_DATE('2020-12-27','%d-%m-%Y'),8,'');
+(1,'Completed',STR_TO_DATE('11-05-2024','%d-%m-%Y'),9,'Great'),
+(4,'Completed',STR_TO_DATE('12-27-2020','%d-%m-%Y'),8,'Ok');
 
 
 
