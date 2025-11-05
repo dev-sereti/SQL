@@ -122,3 +122,8 @@ ORDER BY reading_status DESC;
 -- Count 
 
 SELECT COUNT (*) AS total_books FROM books;
+
+-- AVG
+-- Get average number of pages
+
+SELECT AVG(pages) AS average_pages FROM books;
