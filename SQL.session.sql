@@ -94,3 +94,7 @@ WHERE genre = 'FICTION' AND pages > 400;
 
 -- Get all books sorted by publication year (newest first)
 
+SELECT title,publication_year
+FROM books
+ORDER BY publication_year DESC;
+
