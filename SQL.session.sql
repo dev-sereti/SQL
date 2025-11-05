@@ -51,26 +51,25 @@ VALUES
 ('Chimamanda', 'Ngozi Adichie', 1977, 'Nigeria'),
 ('Leo', 'Tolstoy', 1828, 'Russia');
 
--- Insert values into Books table
 
-INSERT INTO Books (BookTitle, AuthorId, PublicationYear, BuyDate)
-VALUES
-('Things Fall Apart', 3, 1958, STR_TO_DATE('12-06-2015', '%d-%m-%Y')),
-('Pride and Prejudice', 4, 1813, STR_TO_DATE('10-09-2020', '%d-%m-%Y')),
-('Sense and Sensibility', 4, 1811, STR_TO_DATE('03-11-2020', '%d-%m-%Y')),
-('Great Expectations', 5, 1860, STR_TO_DATE('12-05-2022', '%d-%m-%Y')),
-('A Tale of Two Cities', 5, 1859, STR_TO_DATE('17-03-2023', '%d-%m-%Y')),
-('The Great Gatsby', 6, 1925, STR_TO_DATE('24-08-2019', '%d-%m-%Y')),
-('The Time of the Hero', 7, 1996, STR_TO_DATE('12-09-2024', '%d-%m-%Y'));
+-- Insert books
+INSERT INTO books (title, author_id, publication_year, genre, pages, isbn)
+VALUES 
+    ('1984', 1, 1949, 'Dystopian Fiction', 328, '9780451524935'),
+    ('Animal Farm', 1, 1945, 'Political Satire', 112, '9780451526342'),
+    ('Pride and Prejudice', 2, 1813, 'Romance', 432, '9780141439518'),
+    ('One Hundred Years of Solitude', 3, 1967, 'Magical Realism', 417, '9780060883287'),
+    ('Norwegian Wood', 4, 1987, 'Fiction', 296, '9780375704024'),
+    ('Americanah', 5, 2013, 'Fiction', 477, '9780307455925');
 
 
--- Insert values into ReadingStatus table
-
-INSERT INTO ReadingStatus(BookNumber,ReadingStatus,FinishDate,BookRating,Notes)
-VALUES
-(1,'Completed',STR_TO_DATE('11-05-2024','%d-%m-%Y'),9,'Great'),
-(4,'Completed',STR_TO_DATE('27-12-2020','%d-%m-%Y'),8,'Ok'),
-(2,'Completed',STR_TO_DATE('07-12-2021','%d-%m-%Y'),5,'Ok');
+-- Insert reading status for books
+INSERT INTO reading_status (book_id, status, start_date, finish_date, rating, notes)
+VALUES 
+    (1, 'Completed', '2024-01-05', '2024-01-20', 9, 'Thought-provoking and still relevant today'),
+    (2, 'Completed', '2024-01-22', '2024-01-25', 8, 'Clever allegory'),
+    (3, 'Currently Reading', '2024-02-01', NULL, NULL, 'Enjoying the wit and social commentary'),
+    (4, 'To Read', NULL, NULL, NULL, 'Highly recommended by friends');
 
 
 
