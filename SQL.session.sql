@@ -30,10 +30,11 @@ CREATE TABLE ReadingStatus (
     BookNumber INT,
     ReadingStatus VARCHAR(20) NOT NULL,
     FinishDate DATE,
-    BookRating INT,
+    BookRating INT CHECK (BookRating BETWEEN 0 AND 10),
     Notes TEXT,
     FOREIGN KEY (BookNumber) REFERENCES Books(BookNumber)
 );
+
 
 -- Insert values into Authors table
 INSERT INTO Authors (AuthorFirstName, AuthorLastName, Country)
@@ -61,3 +62,11 @@ VALUES
 
 -- Insert values into ReadingStatus table
 
+INSERT INTO ReadingStatus(BookNumber,ReadingStatus,FinishDate,BookRating,Notes)
+VALUES
+(1,'Completed',STR_TO_DATE('2024-01-05','%d-%m-%Y'),9,''),
+(4,'Completed',STR_TO_DATE('2020-12-27','%d-%m-%Y'),8,'');
+
+
+
+--  
