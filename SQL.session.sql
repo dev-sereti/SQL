@@ -71,6 +71,4 @@ VALUES
     (3, 'Currently Reading', '2024-02-01', NULL, NULL, 'Enjoying the wit and social commentary'),
     (4, 'To Read', NULL, NULL, NULL, 'Highly recommended by friends');
 
-
-
 --  
