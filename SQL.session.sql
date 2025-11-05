@@ -1,6 +1,14 @@
 -- Use database
 USE personal_library;
 
+-- Drop tables if exist.
+DROP TABLE IF EXISTS reading_status;
+DROP TABLE IF EXISTS books;
+DROP TABLE IF EXISTS authors;
+
+
+
+
 -- Create the authors table
 CREATE TABLE authors (
     author_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -65,4 +73,11 @@ VALUES
     (3, 'Currently Reading', '2024-02-01', NULL, NULL, 'Enjoying the wit and social commentary'),
     (4, 'To Read', NULL, NULL, NULL, 'Highly recommended by friends');
 
---  
+-- Retrieve only names from authors
+
+SELECT * FROM authors;
+SELECT * FROM books;
+SELECT * FROM reading_status;
+
+
+
