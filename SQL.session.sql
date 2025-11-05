@@ -41,16 +41,15 @@ CREATE TABLE reading_status (
 );
 
 
--- Insert values into Authors table
-INSERT INTO Authors (AuthorFirstName, AuthorLastName, Country)
-VALUES 
-('Hellen', 'White', 'USA'),
-('Tyron', 'Harrison', 'USA'),
-('Chinua', 'Achebe', 'Nigeria'),
-('Jane', 'Austen', 'UK'),
-('Charles', 'Dickens', 'UK'),
-('F. Scott', 'Fitzgerald', 'USA'),
-('Mario', 'Vargas', 'Peru');
+-- Insert individual authors
+INSERT INTO authors (first_name, last_name, birth_year, country)
+VALUES ('George', 'Orwell', 1903, 'United Kingdom');
+
+INSERT INTO authors (first_name, last_name, birth_year, country)
+VALUES ('Jane', 'Austen', 1775, 'United Kingdom');
+
+INSERT INTO authors (first_name, last_name, birth_year, country)
+VALUES ('Gabriel', 'García Márquez', 1927, 'Colombia');
 
 -- Insert values into Books table
 
