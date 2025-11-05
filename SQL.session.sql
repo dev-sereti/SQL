@@ -28,15 +28,16 @@ CREATE TABLE books (
     FOREIGN KEY (author_id) REFERENCES authors(author_id)
 );
 
--- Create ReadingStatus table
-CREATE TABLE ReadingStatus (
-    StatusId INT PRIMARY KEY AUTO_INCREMENT,
-    BookNumber INT,
-    ReadingStatus VARCHAR(20) NOT NULL,
-    FinishDate DATE,
-    BookRating INT CHECK (BookRating BETWEEN 0 AND 10),
-    Notes TEXT,
-    FOREIGN KEY (BookNumber) REFERENCES Books(BookNumber)
+-- Create the reading_status table
+CREATE TABLE reading_status (
+    status_id INT PRIMARY KEY AUTO_INCREMENT,
+    book_id INT,
+    status VARCHAR(20) NOT NULL,
+    start_date DATE,
+    finish_date DATE,
+    rating INT,
+    notes TEXT,
+    FOREIGN KEY (book_id) REFERENCES books(book_id)
 );
 
 
