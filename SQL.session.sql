@@ -85,5 +85,12 @@ SELECT title ,publication_year
 FROM books
 WHERE publication_year > 1950;
 
+-- Find fiction books with more than 400 pages
 
+SELECT title,genre,pages
+FROM books
+WHERE genre = 'FICTION' AND pages > 400;
+
+
+-- Get all books sorted by publication year (newest first)
 
