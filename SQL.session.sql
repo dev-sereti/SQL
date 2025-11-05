@@ -125,5 +125,22 @@ SELECT COUNT (*) AS total_books FROM books;
 
 -- AVG
 -- Get average number of pages
-
 SELECT AVG(pages) AS average_pages FROM books;
+
+-- Find the earliest and latest publication years
+
+SELECT
+MIN (publication_year AS earliest),
+MAX (publication_year AS latest),
+FROM books;
+
+
+-- Count books by each author
+SELECT 
+    authors.first_name,
+    authors.last_name,
+    COUNT(books.book_id) AS book_count
+FROM authors
+LEFT JOIN books ON authors.author_id = books.author_id
+GROUP BY authors.author_id, authors.first_name, authors.last_name
+ORDER BY book_count DESC;
