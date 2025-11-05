@@ -2,16 +2,18 @@
 USE personal_library;
 
 -- Drop dependent tables in correct order
-DROP TABLE IF EXISTS ReadingStatus;
-DROP TABLE IF EXISTS Books;
-DROP TABLE IF EXISTS Authors;
 
--- Create Authors table
-CREATE TABLE Authors (
-    AuthorId INT PRIMARY KEY AUTO_INCREMENT,
-    AuthorFirstName VARCHAR(50),
-    AuthorLastName VARCHAR(50),
-    Country VARCHAR(50)
+--DROP TABLE IF EXISTS ReadingStatus;
+--DROP TABLE IF EXISTS Books;
+--DROP TABLE IF EXISTS authors;
+
+-- Create the authors table
+CREATE TABLE authors (
+    author_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    birth_year INT,
+    country VARCHAR(50)
 );
 
 -- Create Books table
