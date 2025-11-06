@@ -43,15 +43,14 @@ CREATE TABLE reading_status (
 );
 
 -- Create purchases table
-CREATE TABLE purchases (
+CREATE TABLE purchases(
     purchase_id INT PRIMARY KEY AUTO_INCREMENT,
-    book_id INT,
-    purchase_date DATE,
+    book_id INT,purchase_date DATE,
     price DECIMAL(10,2),
     store VARCHAR(100),
     format VARCHAR(20),
     FOREIGN KEY (book_id) REFERENCES books(book_id)
-);
+    );
 
 -- Add purchase data
 INSERT INTO purchases (book_id, purchase_date, price, store, format)
