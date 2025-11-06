@@ -42,6 +42,17 @@ CREATE TABLE reading_status (
     FOREIGN KEY (book_id) REFERENCES books(book_id)
 );
 
+-- Create purchases table
+CREATE TABLE purchases (
+    purchase_id INT PRIMARY KEY AUTO_INCREMENT,
+    book_id INT,
+    purchase_date DATE,
+    price DECIMAL(10,2),
+    store VARCHAR(100),
+    format VARCHAR(20),
+    FOREIGN KEY (book_id) REFERENCES books(book_id)
+);
+
 
 -- Insert individual authors
 INSERT INTO authors (first_name, last_name, birth_year, country)
