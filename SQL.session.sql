@@ -115,6 +115,11 @@ SELECT title,publication_year
 FROM books
 ORDER BY publication_year DESC;
 
+-- List all authors from Japan
+SELECT * FROM authors
+WHERE country='Japan';
+
+
 -- Get books with their author names
 
 SELECT books.title, authors.first_name,authors.last_name,books.publication_year
