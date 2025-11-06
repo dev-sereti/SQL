@@ -136,7 +136,7 @@ ORDER BY reading_status DESC;
 --  Aggregate Functions.
 -- Count 
 
-SELECT COUNT (*) AS total_books FROM books;
+SELECT COUNT * AS total_books FROM books;
 
 -- AVG
 -- Get average number of pages
@@ -163,3 +163,4 @@ SELECT AVG(rating) AS average_ratings
 FROM reading_status 
 WHERE status = 'Completed';
 
+-- Update data Add
