@@ -53,6 +53,13 @@ CREATE TABLE purchases (
     FOREIGN KEY (book_id) REFERENCES books(book_id)
 );
 
+-- Add purchase data
+INSERT INTO purchases (book_id, purchase_date, price, store, format)
+VALUES 
+    (1, '2024-01-01', 14.99, 'Amazon', 'Paperback'),
+    (3, '2024-01-28', 12.50, 'Local Bookstore', 'Hardcover'),
+    (5, '2024-02-25', 9.99, 'Amazon', 'Kindle');
+
 
 -- Insert individual authors
 INSERT INTO authors (first_name, last_name, birth_year, country)
