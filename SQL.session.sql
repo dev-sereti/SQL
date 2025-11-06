@@ -146,13 +146,11 @@ SELECT COUNT (*) AS total_books FROM books;
 -- Get average number of pages
 SELECT AVG(pages) AS average_pages FROM books;
 
--- Find the earliest and latest publication years
-
+-- Find the earliest and latest publication years.
 SELECT
 MIN (publication_year AS earliest),
 MAX (publication_year AS latest),
 FROM books;
-
 
 -- Count books by each author
 SELECT 
@@ -164,9 +162,7 @@ LEFT JOIN books ON authors.author_id = books.author_id
 GROUP BY authors.author_id, authors.first_name, authors.last_name
 ORDER BY book_count DESC;
 
-
--- Find your average rating for completed books
-
+-- Find your average rating for completed books.
 SELECT AVG(rating) AS average_ratings
 FROM reading_status 
 WHERE status = 'Completed';
