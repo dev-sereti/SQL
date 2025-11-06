@@ -118,7 +118,6 @@ ORDER BY publication_year DESC;
 SELECT * FROM authors
 WHERE country='Japan';
 
-
 -- Get books with their author names
 
 SELECT books.title, authors.first_name,authors.last_name,books.publication_year
@@ -139,7 +138,6 @@ WHERE reading_status ='Completed'
 ORDER BY reading_status DESC;
 
 --  Aggregate Functions.
-
 -- Count 
 
 SELECT COUNT (*) AS total_books FROM books;
