@@ -166,3 +166,11 @@ FROM authors
 LEFT JOIN books ON authors.author_id = books.author_id
 GROUP BY authors.author_id, authors.first_name, authors.last_name
 ORDER BY book_count DESC;
+
+
+-- Find your average rating for completed books
+
+SELECT AVG(rating) AS average_ratings
+FROM reading_status 
+WHERE status = 'Completed';
+
