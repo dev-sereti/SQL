@@ -61,7 +61,6 @@ VALUES
 ('Chimamanda', 'Ngozi Adichie', 1977, 'Nigeria'),
 ('Leo', 'Tolstoy', 1828, 'Russia');
 
-
 -- Insert books
 INSERT INTO books (title, author_id, publication_year, genre, pages, isbn)
 VALUES 
@@ -78,7 +77,6 @@ VALUES
     (1, '2024-01-01', 14.99, 'Amazon', 'Paperback'),
     (3, '2024-01-28', 12.50, 'Local Bookstore', 'Hardcover'),
     (5, '2024-02-25', 9.99, 'Amazon', 'Kindle');
-
 
 -- Insert reading status for books
 INSERT INTO reading_status (book_id, status, start_date, finish_date, rating, notes)
