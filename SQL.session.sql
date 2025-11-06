@@ -5,8 +5,7 @@ USE personal_library;
 DROP TABLE IF EXISTS reading_status;
 DROP TABLE IF EXISTS books;
 DROP TABLE IF EXISTS authors;
-
-
+DROP TABLE IF EXISTS purchases;
 
 
 -- Create the authors table
