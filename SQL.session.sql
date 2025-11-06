@@ -51,8 +51,6 @@ CREATE TABLE purchases(
     FOREIGN KEY (book_id) REFERENCES books(book_id)
     );
 
-
-
 -- Insert individual authors
 INSERT INTO authors (first_name, last_name, birth_year, country)
 VALUES 
