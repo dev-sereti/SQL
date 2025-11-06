@@ -51,12 +51,6 @@ CREATE TABLE purchases(
     FOREIGN KEY (book_id) REFERENCES books(book_id)
     );
 
--- Add purchase data
-INSERT INTO purchases (book_id, purchase_date, price, store, format)
-VALUES 
-    (1, '2024-01-01', 14.99, 'Amazon', 'Paperback'),
-    (3, '2024-01-28', 12.50, 'Local Bookstore', 'Hardcover'),
-    (5, '2024-02-25', 9.99, 'Amazon', 'Kindle');
 
 
 -- Insert individual authors
@@ -79,6 +73,13 @@ VALUES
     ('One Hundred Years of Solitude', 3, 1967, 'Magical Realism', 417, '9780060883287'),
     ('Norwegian Wood', 4, 1987, 'Fiction', 296, '9780375704024'),
     ('Americanah', 5, 2013, 'Fiction', 477, '9780307455925');
+
+-- Add purchase data
+INSERT INTO purchases (book_id, purchase_date, price, store, format)
+VALUES 
+    (1, '2024-01-01', 14.99, 'Amazon', 'Paperback'),
+    (3, '2024-01-28', 12.50, 'Local Bookstore', 'Hardcover'),
+    (5, '2024-02-25', 9.99, 'Amazon', 'Kindle');
 
 
 -- Insert reading status for books
